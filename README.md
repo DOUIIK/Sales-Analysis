@@ -1,25 +1,31 @@
-Set of real world data science tasks completed using the Python Pandas library.
+# Sales Analysis Project
 
-In this project we use Python Pandas & Python Matplotlib to analyze and answer business questions about 12 months worth of sales data. The data contains hundreds of thousands of electronics store purchases broken down by month, product type, cost, purchase address, etc.
+This project analyzes sales data for a 12-month period to uncover trends and insights that can help inform business decisions. The dataset includes records of product sales, order dates, quantities, prices, and purchase locations across multiple cities. The analysis explores several key areas to identify the best month for sales, the most successful cities, peak purchase times, frequently sold product combinations, and top-selling products.
 
-We start by cleaning our data. Tasks during this section include:
+## Key Features
 
-Drop NaN values from DataFrame
-Removing rows based on a condition
-Change the type of columns (to_numeric, to_datetime, astype)
-Once we have cleaned up our data a bit, we move the data exploration section. In this section we explore 5 high level business questions related to our data:
+1. **Data Cleaning and Preparation**: 
+   - Consolidated 12 months of sales data into a single file.
+   - Handled missing and erroneous data by removing NaN rows and correcting formatting issues.
+   - Added new columns like month and city to facilitate further analysis.
 
-What was the best month for sales? How much was earned that month?
-What city sold the most product?
-What time should we display advertisemens to maximize the likelihood of customer’s buying product?
-What products are most often sold together?
-What product sold the most? Why do you think it sold the most?
-To answer these questions we walk through many different pandas & matplotlib methods. They include:
+2. **Exploratory Data Analysis (EDA)**:
+   - **Best Month for Sales**: Identified which month generated the highest sales and visualized the results using a bar chart.
+   - **Top Cities for Sales**: Grouped data by city to determine which locations sold the most products.
+   - **Best Time for Advertisements**: Analyzed sales by hour to find the optimal time for advertising.
+   - **Frequently Sold Product Combinations**: Used order IDs to find products that are frequently bought together.
+   - **Top-Selling Products**: Determined the product with the highest sales volume and explored possible reasons behind its popularity.
 
-Concatenating multiple csvs together to create a new DataFrame (pd.concat)
-Adding columns
-Parsing cells as strings to make new columns (.str)
-Using the .apply() method
-Using groupby to perform aggregate analysis
-Plotting bar charts and lines graphs to visualize our results
-Labeling our graphs
+3. **Data Visualization**:
+   - Created bar charts and line plots to represent sales trends over time, across cities, and by product categories.
+   - Dual-axis plots were used to compare product quantities sold with their average prices.
+
+## Technologies Used
+
+- **Python**: For data manipulation and analysis (using libraries such as Pandas, Matplotlib, and Seaborn).
+- **Matplotlib**: For data visualization.
+- **Pandas**: For data cleaning, merging, and grouping.
+
+## Conclusion
+
+This analysis provides valuable insights into sales performance over the year, helping to inform future business strategies and marketing efforts.
